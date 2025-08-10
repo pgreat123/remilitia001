@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remilitia</title>
+    <link rel="stylesheet" href="remilitia.css">
+</head>
+<body>
+    <!-- Home Interface -->
+    <div id="home-interface" class="center-screen">
+        <div id="home-content">
+            <h1>Welcome to Lil Babies</h1>
+            <button id="start-game-button">Start Game</button>
+        
+        </div>
+    </div>
+
+    <!-- High Score Screen -->
+    <div id="highscore-screen" class="center-screen" style="display: none;">
+        <h1>High Scores</h1>
+        <ol id="highscore-list">
+            <!-- High scores will be dynamically populated -->
+        </ol>
+        <button id="return-home-button-highscore">Return to Home</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="center-screen" style="display: none;">
+        <h1>Game Over</h1>
+        <p>remilitia Gems: <span id="final-score">0</span></p>
+        <p id="highscore-message" style="display: none;">🎉 New High Score! 🎉</p>
+        <button id="return-home-button">Return to Home</button>
+    </div>
+
+    <!-- Game Container -->
+    <div id="game-container" style="display: none;">
+        <header>
+            <h1>remilitia</h1>
+            <div id="score-board">
+                <p>remilitia Gems: <span id="score">0</span></p>
+                <p>Lives: <span id="lives">3</span></p>
+            </div>
+            <div id="control-buttons">
+                <button id="pause-button">Pause</button>
+                <button id="play-button" style="display: none;">Play</button>
+                <button id="restart-game-button" style="display: none;">Restart</button>
+            </div>
+        </header>
+        <div id="game-area">
+            <img id="chameleon" src="remilita001-removebg-preview (1).png">
+
+    <script src="remilitia.js"></script>
+</body>
+</html>

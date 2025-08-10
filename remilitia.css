@@ -1,0 +1,349 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+/* Home Interface */
+#home-interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('remilita.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#home-content {
+    color: rgb(205, 133, 63);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.854);
+    border-radius: 10px;
+}
+
+#home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#chameleon-home {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+#start-game-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(205, 133, 63);
+    color: rgba(235, 235, 235, 0.854);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#start-game-button:hover {
+   opacity: 0.6;
+}
+
+/* Game Container */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    background-image: url('remilita.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(205, 133, 63);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(108, 222, 186);
+}
+
+#score-board {
+    display: flex;
+    gap: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    background: linear-gradient(45deg, rgb(50, 216, 183), rgb(129, 135, 130));
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(205, 133, 63)
+}
+
+#score-board p {
+    margin: 0;
+}
+
+#game-area {
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid rgb(205, 133, 63);
+    background-color: rgb(205, 133, 63);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    touch-action: none; /* allow custom touch gestures */
+    
+}
+
+#chameleon {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+.falling-item {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(253, 253, 253, 0.854);
+    border-radius: 50%;
+}
+
+/* Styled Control Buttons */
+#control-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(205, 133, 63);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+#control-buttons button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#pause-button {
+    background-color: rgb(255, 255, 255)
+}
+
+#play-button {
+    background-color: rgb(232, 232, 196);
+}
+
+#restart-game-button {
+    background-color: rgba(24, 133, 49, 0.854);
+}
+
+/* Game Over Screen */
+#game-over-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #13ffd0dd;
+    background-image: url('remilita.jpg');
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#game-over-screen h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#game-over-screen p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#return-home-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(205, 133, 63);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#return-home-button:hover {
+    background-color: rgba(255, 255, 255, 0.854);
+}
+
+#highscore-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.854); /* Gold color for high scores */
+    color: black;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+}
+
+#highscore-button:hover {
+    background-color: #f9eba5; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+#highscore-button:active {
+    background-color: #FFA000; /* Even darker on click */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95); /* Slight compression effect */
+}
+
+/* High Score Page */
+#high-score-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    height: 100vh;
+}
+
+#high-score-page header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6effab;
+    color: white;
+}
+
+#high-score-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#high-score-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#score-list {
+    list-style-type: decimal;
+    padding-left: 0;
+}
+
+#score-list li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#return-to-home-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #51ff9f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#return-to-home-button:hover {
+    background-color: #ffffff;
+}
+
+/* Responsive Design - Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Home Interface */
+    #home-interface {
+        flex-direction: column;
+    }
+
+    /* Game Area */
+    #game-area {
+        width: 90%; /* More width for smaller screens */
+        max-width: 350px;
+        height: 300px; /* Adjust height */
+    }
+
+    /* Chameleon */
+    #chameleon {
+        height: 60px; /* Slightly smaller chameleon */
+    }
+
+    /* Buttons */
+    #start-game-button,
+    #return-home-button,
+    #restart-game-button,
+    #pause-button,
+    #play-button {
+        font-size: 18px; /* Adjusted font size for mobile */
+        padding: 12px 18px; /* Slightly smaller padding */
+    }
+
+    /* Score Board */
+    #score-board {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Home Interface */
+    #home-interface {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Game Area */
+    #game-area {
+        width: 95%; /* Even more width for smaller screens */
+        height: 280px; /* Further reduce height for small screens */
+    }
+
+    /* Chameleon */
+    #chameleon {
+        height: 50px; /* Smaller chameleon */
+    }
+
+    /* Buttons */
+    #start-game-button,
+    #return-home-button,
+    #restart-game-button,
+    #pause-button,
+    #play-button {
+        font-size: 16px; /* Further reduce font size */
+        padding: 10px 15px; /* Adjust padding */
+    }
+
+    /* Score Board */
+    #score-board {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+}
